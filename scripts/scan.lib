@@ -1,0 +1,18 @@
+nmap_scan () {
+	nmap $target > $directory/nmap
+	echo "The results of the nmap scan are stored in $directory/nmap"
+	echo "Cleaning out nmap results."
+	grep -E "^\s*\S+\s+\S+\s+\S+\s*$" directory/nmap > directory/nmap_cleaned
+}
+
+dirsearch_scan() {
+	echo "Activating python virtual environment..."
+	$dirsearch_path/source /dvenv/bin/activate
+	$dirsearch_path/dirsearch.py -u $target -e php --simple-report=$directory/dirsearch
+	echo "The results of the dirsearch scans are stored in $directory/dirsearch."
+}
+
+crt_scan() {
+	curl "https://crt.sh/?q=$directory&output=json" -o $directory/crt
+	echo "The results of cert parsing is stored in $directory/crt"
+}
