@@ -4,17 +4,17 @@ const skills = [
   {
     icon: 'code',
     title: 'Languages',
-    items: ['Python', 'SQL', 'R', 'JavaScript'],
+    items: ['Python', 'SQL', 'Go'],
   },
   {
     icon: 'insert_chart',
     title: 'Tools',
-    items: ['Tableau', 'PowerBI', 'Excel', 'Jupyter'],
+    items: ['PowerBI', 'Excel', 'Jupyter'],
   },
   {
     icon: 'library_books',
     title: 'Libraries',
-    items: ['Pandas', 'Scikit-learn', 'NumPy', 'TensorFlow'],
+    items: ['Pandas', 'NumPy'],
   },
 ]
 
@@ -34,6 +34,16 @@ const socials = [
     icon: (
       <svg aria-hidden="true" className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
         <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.38 7.86 10.91.58.1.79-.25.79-.56v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .98-.31 3.17 1.18A11.03 11.03 0 0 1 12 6.03c.98 0 1.96.13 2.88.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.26 5.68.42.36.78 1.06.78 2.14v3.16c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
+      </svg>
+    ),
+  },
+
+    {
+    name: 'Medium',
+    href: 'https://medium.com',
+    icon: (
+      <svg aria-hidden="true" className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S.02 4.88.02 3.5 1.14 1 2.5 1s2.48 1.12 2.48 2.5ZM.35 8h4.3v15h-4.3V8Zm7.48 0h4.12v2.05h.06c.57-1.08 1.98-2.22 4.08-2.22 4.36 0 5.16 2.87 5.16 6.6V23h-4.3v-7.6c0-1.81-.03-4.14-2.52-4.14-2.52 0-2.9 1.97-2.9 4V23h-4.3V8Z" />
       </svg>
     ),
   },
@@ -102,7 +112,7 @@ export default function HomePage() {
 
       <section className="mb-section-gap">
         <div className="mb-10 text-left">
-          <h2 className="font-headline-lg text-[40px] font-extrabold leading-tight text-on-surface md:text-[44px]">Technical Arsenal</h2>
+          <h2 className="font-headline-lg text-[40px] font-extrabold leading-tight text-on-surface md:text-[44px]">Technical Skills</h2>
           <p className="max-w-2xl font-body-md text-body-md text-on-surface-variant mt-4">
             Modern analytics requires a blend of code, visualization, and machine learning workflows.
           </p>
