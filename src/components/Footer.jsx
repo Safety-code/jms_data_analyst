@@ -37,7 +37,7 @@ export default function Footer() {
                 <input
                   type="text"
                   id="footer-name"
-                  placeholder="John Doe"
+                  placeholder="Joseph Mensah"
                   value={form.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
                   required
@@ -51,7 +51,7 @@ export default function Footer() {
                 <input
                   type="email"
                   id="footer-email"
-                  placeholder="john@example.com"
+                  placeholder="safetmens98@gmail.com"
                   value={form.email}
                   onChange={(e) => setForm({ ...form, email: e.target.value })}
                   required
@@ -84,10 +84,10 @@ export default function Footer() {
 
         <div className="flex flex-col gap-6 border-t border-white/70 pt-8 md:flex-row md:items-center md:justify-between">
           <Link to="/" className="font-label-caps text-label-caps text-primary transition-colors hover:text-secondary">
-            AnalystPortfolio
+            Joseph Mensah
           </Link>
           <div className="font-data-mono text-data-mono text-on-surface text-center">
-            © 2024 Data Analyst Portfolio. Built with Precision.
+            © 2026 Data Analyst Portfolio. All rights reserved.
           </div>
         </div>
       </div>
